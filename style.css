@@ -1,0 +1,118 @@
+/* Mengatur semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tampilan halaman */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffd6e7, #ffeaf2);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Kotak utama */
+body > div {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(214, 51, 132, 0.2);
+}
+
+/* Judul */
+h1 {
+    text-align: center;
+    color: #d63384;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Label */
+label {
+    display: block;
+    color: #a52a5f;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+/* Input dan Select */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #f3a6c8;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    background-color: #fff8fb;
+    margin-bottom: 15px;
+}
+
+/* Saat input dipilih */
+input[type="text"]:focus,
+select:focus {
+    border-color: #d63384;
+    box-shadow: 0 0 6px rgba(214, 51, 132, 0.25);
+}
+
+/* Semua tombol */
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Tombol kirim */
+button[type="submit"] {
+    width: 100%;
+    background-color: #d63384;
+    color: white;
+}
+
+/* Hover tombol kirim */
+button[type="submit"]:hover {
+    background-color: #b82b70;
+    transform: translateY(-2px);
+}
+
+/* Daftar data */
+#data-tampil {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Data yang ditampilkan */
+#data-tampil li {
+    background-color: #fff0f6;
+    border-left: 5px solid #d63384;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #e3086e;
+}
+
+/* Tombol hapus */
+button[onclick="deletedata()"] {
+    width: 100%;
+    background-color: #ff6b9d;
+    color: white;
+}
+
+/* Hover tombol hapus */
+button[onclick="deletedata()"]:hover {
+    background-color: #e05282;
+    transform: translateY(-2px);
+}
